@@ -1,0 +1,51 @@
+* {
+border:solid 1px grey;
+padding:5px;
+}
+navbar {
+display:block;
+margin:5px;
+}
+
+banner {
+display:block;
+}
+banner img {
+display:block;
+width:400px;
+margin-left:auto;
+margin-right:auto;
+}
+
+ul {
+display:block;
+width:50%;
+margin-left:auto;
+margin-right:auto;
+}
+li{
+display:inline-block;
+width:100px
+margin-left:auto;
+margin-right:auto;
+}
+li>a {
+display:inline-block;
+width:70px;
+margin-left:auto;
+margin-right:auto;
+}
+
+#loginForm {
+display:block;
+}
+#loginForm label, #loginForm input{
+display:block;
+width:200px;
+margin-left:auto;
+margin-right:auto;
+margin-top:2px;
+margin-bottom:2px;
+}
+
+
