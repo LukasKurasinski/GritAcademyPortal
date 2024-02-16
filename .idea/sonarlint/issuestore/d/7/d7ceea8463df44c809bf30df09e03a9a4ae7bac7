@@ -1,6 +1,21 @@
 
+Q
+java:S3740#"/Provide the parametrized type for this generic.(Ê§ä§ùÿÿÿÿ8èôÙŒÛ1
+K
+java:S3740-"/Provide the parametrized type for this generic.(‹ãÀ`8éôÙŒÛ1
 ƒ
-java:S1989"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(±Êó¢ÿÿÿÿÿ8”ö„ŒÛ1
-]	java:S125"<This block of commented-out lines of code should be removed.(—Ûóäûÿÿÿÿ8•ö„ŒÛ1
-m
-java:S1989"PHandle the following exception that could be thrown by "getWriter": IOException.(£à¹‘8—ö„ŒÛ1
+java:S1989"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(±Êó¢ÿÿÿÿÿ8îôÙŒÛ1
+]	java:S125"<This block of commented-out lines of code should be removed.(—Ûóäûÿÿÿÿ8îôÙŒÛ1
+}
+java:S1989#"[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(Ê§ä§ùÿÿÿÿ8ðôÙŒÛ1
+r
+java:S1989&"PHandle the following exception that could be thrown by "getWriter": IOException.(´…Úˆøÿÿÿÿ8ðôÙŒÛ1
+r
+java:S1989*"PHandle the following exception that could be thrown by "getWriter": IOException.(ãúõŸûÿÿÿÿ8òôÙŒÛ1
+w
+java:S1989-"[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(‹ãÀ`8òôÙŒÛ1
+r
+java:S1989."PHandle the following exception that could be thrown by "getWriter": IOException.(û“žþÿÿÿÿ8Ñü‚Û1
+T
+java:S1135/"2Complete the task associated to this TODO comment.(¢ó©¿ùÿÿÿÿ8‚›¸Û1
+]	java:S1252"<This block of commented-out lines of code should be removed.(ËŽõùÿÿÿÿ8óôÙŒÛ1

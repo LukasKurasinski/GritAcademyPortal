@@ -1,0 +1,28 @@
+
+`	java:S1122"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+`	java:S112u"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+t
+java:S2293?"YReplace the type specification in this constructor call with the diamond operator ("<>").(›ÒÑÿÿÿÿÿ
+‡
+java:S1319""qThe return type of this method should be an interface such as "List" rather than the implementation "LinkedList".(şÄê×
+c
+java:S2095B"HUse try-with-resources or close this "Connection" in a "finally" clause.(´„Õİüÿÿÿÿ
+j
+java:S2095~"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(§ÖûÌÿÿÿÿÿ
+b
+java:S2095C"GUse try-with-resources or close this "Statement" in a "finally" clause.(íñéşÿÿÿÿ
+c
+java:S2095|"HUse try-with-resources or close this "Connection" in a "finally" clause.(´„Õİüÿÿÿÿ
+<
+java:S1170"!Make this final field static too.(ß±Öüÿÿÿÿ
+`
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ß±Öüÿÿÿÿ
+2
+java:S1116"Remove this empty statement.(‘Šƒõ
+E	java:S106,"+Replace this use of System.out by a logger.(Ñ­¿¥şÿÿÿÿ
+A
+java:S11684"+Return an empty collection instead of null.(¥¹ï
+E	java:S106Y"+Replace this use of System.out by a logger.(¨¶ÑÍşÿÿÿÿ
+F	java:S106"+Replace this use of System.out by a logger.(´‹¹öşÿÿÿÿ
+R	java:S125‚"<This block of commented-out lines of code should be removed.(ÈÌş³
+F	java:S106"+Replace this use of System.out by a logger.(¨¶ÑÍşÿÿÿÿ

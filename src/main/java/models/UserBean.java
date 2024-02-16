@@ -8,8 +8,8 @@ import java.io.Serializable;
 public class UserBean implements Serializable {
 
     private USER_TYPE userType;
-    private PRIVILAGE_TYPE userPrivilage = PRIVILAGE_TYPE.user;
-    private STATE_TYPE stateType = STATE_TYPE.anonymous;
+    private PRIVILAGE_TYPE privilageType = PRIVILAGE_TYPE.user;
+    private STATE_TYPE stateType = models.STATE_TYPE.anonymous;
 
     public UserBean(){}
 
@@ -17,16 +17,16 @@ public class UserBean implements Serializable {
         this.stateType = stateType;
     }
 
-    public void setUserPrivilage(PRIVILAGE_TYPE userPrivilage) {
-        this.userPrivilage = userPrivilage;
+    public void setprivilageType(PRIVILAGE_TYPE privilageType) {
+        this.privilageType = privilageType;
     }
 
     public void setUserType(USER_TYPE userType) {
         this.userType = userType;
     }
 
-    public PRIVILAGE_TYPE getUserPrivilage() {
-        return userPrivilage;
+    public PRIVILAGE_TYPE getprivilageType() {
+        return privilageType;
     }
 
     public STATE_TYPE getStateType() {
@@ -35,6 +35,11 @@ public class UserBean implements Serializable {
 
     public USER_TYPE getUserType() {
         return userType;
+    }
+
+    @Override
+    public String toString() {
+        return userType + " " + privilageType + " "  + stateType;
     }
 }
 
@@ -47,7 +52,4 @@ enum PRIVILAGE_TYPE {
     admin,
     superAdmin
 }
-enum STATE_TYPE {
-    anonymous,
-    confirmed
-}
+
