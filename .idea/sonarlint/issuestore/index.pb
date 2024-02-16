@@ -1180,3 +1180,11 @@ Q.idea/sonarlint/securityhotspotstore/5/6/5638eca1288f3c9951eed1818124cbc4e2ba7f
 Q.idea/sonarlint/securityhotspotstore/5/4/54df01540fdcfd361b73c4cdc2c3502b64534140,3\a\3af0a99e91890a6290bbd80477df92cafca33333
 Å
 Q.idea/sonarlint/securityhotspotstore/5/3/5395ff624a15093f7d4ee34962027c767799e7fb,3\2\324455ce59f5a20b3e4ffbcd716e4b13cea17dc6
+S
+#src/main/java/models/USER_TYPE.java,e\3\e30f32a235a1125640f1d715987bc5013886fa7d
+Y
+)src/main/webapp/JSP/fragments/message.jsp,8\a\8a76574f48583c178d1bed02418b761c67324610
+^
+.src/main/webapp/JSP/fragments/errorMessage.jsp,0\b\0b4921a943fac68cfb533d9eea37c560bf4cbfc2
+a
+1src/main/webapp/JSP/fragments/studentUserPage.jsp,c\6\c6baf4f47c9062d7c519dc7cecec2996ec26c019

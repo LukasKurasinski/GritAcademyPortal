@@ -4,8 +4,15 @@
 <html>
 <%@ include file="fragments/head.jsp" %>
 <body>
-<%@ include file=”fragments/navbar.jsp” %>
+<%@ include file="fragments/navbar.jsp" %>
 
-<%@ include file=”fragments/footer.jsp” %>
+
+<c:if test="${userBean.userType == 'student'}">
+    <%@ include file="fragments/studentUserPage.jsp" %>
+</c:if>
+
+
+<%@ include file="fragments/footer.jsp" %>
+
 </body>
 </html>

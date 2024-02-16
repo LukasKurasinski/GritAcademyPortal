@@ -6,9 +6,7 @@
 <body>
 <%@ include file="fragments/navbar.jsp" %>
 
-<:c if UserBean.privilage type==admin>
-    <%@ include file="fragments/navbarAdmin.jsp" %>
-<:c/>
+
 
 <h>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h>
 <p>mentum integer enim neque volutpat. Ipsum a arcu cursus vitae congue mauris rhoncus aenean. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Semper feugiat nibh sed pulvinar proin gravida. Id porta nibh venenatis cras sed felis eget velit aliquet. Et malesuada fames ac turpis egestas sed tempus urna. Ipsum a arcu cursus vitae congue mauris rhoncus aenean vel. Tortor condimentum lacinia quis vel eros. Viverra aliquet eget sit amet tellus. Aliquam ultrices sagittis orci a scelerisque purus se</p>

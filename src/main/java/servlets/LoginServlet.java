@@ -2,6 +2,7 @@ package servlets;
 
 import models.MySQLConnector;
 import models.STATE_TYPE;
+import models.USER_TYPE;
 import models.UserBean;
 
 import javax.servlet.ServletException;
@@ -18,7 +19,7 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //System.out.println();
-
+        req.getSession().setAttribute("errorMessage","");
         req.getRequestDispatcher("JSP/login.jsp").forward(req,resp);
     }
 
@@ -30,23 +31,32 @@ public class LoginServlet extends HttpServlet {
         String password = req.getParameter("password");
         String userType = req.getParameter("user_type");
 
-        //comparing data with DB student or teacher
-        if(userType.equals("student")){
-            List data = MySQLConnector.getConnector().selectQuery("studentLogin",username,password);
 
-            if(!data.isEmpty()){
-                resp.getWriter().print("LOGGED IN");
+        //comparing data with DB student or teacher
+        if (userType.equals("student")) {
+            List data = MySQLConnector.getConnector().selectQuery("studentLogin", username, password);
+            //data object always returns row with column names
+            if (data.size() > 1) {
+                req.getSession().setMaxInactiveInterval(360);
+                resp.getWriter().print("LOGGED IN - ");
                 UserBean userBean = new UserBean();
                 userBean.setStateType(STATE_TYPE.confirmed);
-                req.getSession().setAttribute("userBean",userBean);
-                resp.getWriter().print(req.getSession().getAttribute("userBean"));
+                userBean.setUserType(USER_TYPE.student);
+                req.getSession().setAttribute("userBean", userBean);
+                req.getRequestDispatcher("JSP/userPage.jsp").forward(req,resp);
+            }else{
+                req.getSession().setAttribute("errorMessage","Student not found");
+                req.getRequestDispatcher("JSP/login.jsp").forward(req,resp);
             }
-        } else if (userType.equals("teacher")) {
-            List data = MySQLConnector.getConnector().selectQuery("teacherLogin",username,password);
-            if(!data.isEmpty()) resp.getWriter().print("LOGGED IN");
-            //TODO similar to the student code
+        }else if (userType.equals("teacher")) {
+                List data = MySQLConnector.getConnector().selectQuery("teacherLogin", username, password);
+            //data object always returns row with column names
+                if (data.size() > 1) {
+                    resp.getWriter().print("LOGGED IN - ");
+                    //TODO similar to the student code
+                }else{
+                    req.getRequestDispatcher("JSP/login.jsp").forward(req,resp);
+                }
         }
-
-        //resp.getWriter().print(username+" "+password+" "+userType);
     }
 }

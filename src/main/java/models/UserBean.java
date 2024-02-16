@@ -39,17 +39,10 @@ public class UserBean implements Serializable {
 
     @Override
     public String toString() {
-        return userType + " " + privilageType + " "  + stateType;
+        return "userType: "+userType + " privilageType: " + privilageType + " stateType: "  + stateType;
     }
 }
 
-enum USER_TYPE {
-    student,
-    teacher
-}
-enum PRIVILAGE_TYPE {
-    user,
-    admin,
-    superAdmin
-}
+
+
 
