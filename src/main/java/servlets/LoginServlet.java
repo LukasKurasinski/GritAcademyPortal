@@ -39,14 +39,15 @@ public class LoginServlet extends HttpServlet {
             if (data.size() > 1) {
                 req.getSession().setMaxInactiveInterval(360);
                 resp.getWriter().print("LOGGED IN - ");
+
                 UserBean userBean = new UserBean();
                 userBean.setStateType(STATE_TYPE.confirmed);
                 userBean.setUserType(USER_TYPE.student);
                 req.getSession().setAttribute("userBean", userBean);
-                req.getRequestDispatcher("JSP/userPage.jsp").forward(req,resp);
+                req.getRequestDispatcher("/userPage").forward(req,resp);
             }else{
                 req.getSession().setAttribute("errorMessage","Student not found");
-                req.getRequestDispatcher("JSP/login.jsp").forward(req,resp);
+                req.getRequestDispatcher("JSP/login.jsp").forward(req, resp);
             }
         }else if (userType.equals("teacher")) {
                 List data = MySQLConnector.getConnector().selectQuery("teacherLogin", username, password);

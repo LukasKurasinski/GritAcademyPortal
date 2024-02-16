@@ -7,8 +7,8 @@
 <%@ include file="fragments/navbar.jsp" %>
 
 <main>
-<%@ include file="fragments/errorMessage.jsp" %>
 <%@ include file="fragments/loginForm.jsp" %>
+<%@ include file="fragments/errorMessage.jsp" %>
 </main>
 
 
