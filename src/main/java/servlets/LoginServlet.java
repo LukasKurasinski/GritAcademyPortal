@@ -19,9 +19,9 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-            //TODO check username and password in DB
-            //if correct do something
-            //if not correct return to login page with message
+        resp.setContentType("text/html");
+        resp.getWriter().print("TODO check username and password in DB" +
+                "if correct do something" +
+                "if not correct return to login page with message");
     }
 }

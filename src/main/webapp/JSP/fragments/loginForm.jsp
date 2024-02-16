@@ -3,5 +3,10 @@
     <input type="text" id="username" name="username" required>
     <label for="password">Password:</label>
     <input type="password" id="password" name="password" required>
-    <input type="submit" id="loginSubmit" name="loginSubmit">
+    <label for="user_type">Choose a user type:</label>
+        <select id="user_type">
+          <option value="Student">Student</option>
+          <option value="Teacher">Teacher</option>
+        </select>
+    <input type="submit" id="loginSubmit" name="loginSubmit" value="Login">
 </form>

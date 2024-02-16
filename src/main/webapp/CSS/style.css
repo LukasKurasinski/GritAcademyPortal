@@ -39,7 +39,7 @@ margin-right:auto;
 #loginForm {
 display:block;
 }
-#loginForm label, #loginForm input{
+#loginForm label, #loginForm input, #loginForm select{
 display:block;
 width:200px;
 margin-left:auto;
