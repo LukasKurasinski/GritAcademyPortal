@@ -1188,3 +1188,7 @@ Y
 .src/main/webapp/JSP/fragments/errorMessage.jsp,0\b\0b4921a943fac68cfb533d9eea37c560bf4cbfc2
 a
 1src/main/webapp/JSP/fragments/studentUserPage.jsp,c\6\c6baf4f47c9062d7c519dc7cecec2996ec26c019
+i
+9src/main/webapp/JSP/fragments/student/studentUserPage.jsp,2\5\253a52f21db69b49a131800d3d1fdec2b8eac1ae
+g
+7src/main/webapp/JSP/fragments/student/studentNavbar.jsp,b\3\b322a61ccf86843347b71a50222e08e962782b09
