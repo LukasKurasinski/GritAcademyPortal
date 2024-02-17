@@ -1,4 +1,4 @@
-<navbar>
+<navbar id="mainNavbar">
     <banner>
     <img alt="banner image" />
     </banner>

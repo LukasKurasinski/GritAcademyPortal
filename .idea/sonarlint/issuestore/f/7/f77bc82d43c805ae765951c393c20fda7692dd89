@@ -1,6 +1,21 @@
 
-—
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(üª¼í
-|
-java:S1989"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(äì·ëýÿÿÿÿ
-V	java:S125"<This block of commented-out lines of code should be removed.(—Ûóäûÿÿÿÿ
+f
+java:S1192"IDefine a constant instead of duplicating this literal "userBean" 3 times.(¶îöÉ8Éã¡Û1
+ž
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¹Â·Š8åÞÙ¡Û1
+x
+java:S3923"[Remove this conditional structure or edit its code blocks so that they're not all the same.(¢Ÿæ€8›Éã¡Û1
+x
+java:S1989"[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(»ŸÌ8éÞÙ¡Û1
+ƒ
+java:S1989!"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(äì·ëýÿÿÿÿ8éÞÙ¡Û1
+x
+java:S1989#"[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(»ŸÌ8œÉã¡Û1
+ƒ
+java:S1989%"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(äì·ëýÿÿÿÿ8Éã¡Û1
+O
+java:S1135("2Complete the task associated to this TODO comment.(ÔÞ‚“8êÞÙ¡Û1
+O
+java:S1135*"2Complete the task associated to this TODO comment.(ÔÞ‚“8êÞÙ¡Û1
+T
+java:S1135,"2Complete the task associated to this TODO comment.(¬Å÷¢ûÿÿÿÿ8êÞÙ¡Û1

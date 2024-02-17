@@ -2,6 +2,8 @@ allFromStudenter;SELECT id, fname, lname, town, hobby FROM studenter ORDER BY id
 allFromKurser;SELECT id, namn, YHP, beskrivning FROM kurser ORDER BY id ASC;gritacademy;localhost;3306;user;user
 allCoursesForStudent;SELECT s.id, s.fname, s.lname, k.namn, k.YHP, k.beskrivning FROM studenter s JOIN narvaro n ON n.studentID=s.id JOIN kurser k ON k.id=n.kursID WHERE s.fname='{0}' AND s.lname='{1}' AND s.id='{2}' ORDER BY s.id ASC;gritacademy;localhost;3306;user;user
 allCoursesForStudentNoID;SELECT s.id, s.fname, s.lname, k.namn, k.YHP, k.beskrivning FROM studenter s JOIN narvaro n ON n.studentID=s.id JOIN kurser k ON k.id=n.kursID WHERE s.fname='{0}' AND s.lname='{1}' ORDER BY s.id ASC;gritacademy;localhost;3306;user;user
+allCoursesForStudentID;SELECT k.id, k.namn, k.YHP, k.beskrivning FROM students s JOIN narvaro n ON n.studentID=s.id JOIN kurser k ON k.id=n.kursID WHERE s.id='{0}' ORDER BY s.id ASC;gritacademy;localhost;3306;user;user
+allPeopleInCourse;;SELECT s.fname, s.lname, , t.fName, t.lName k.namn, FROM studentes s JOIN narvaro n ON n.studentID=s.id JOIN kurser k ON k.id=n.kursID WHERE s.fname='{0}' AND s.lname='{1}' AND s.id='{2}' ORDER BY s.id ASC;gritacademy;localhost;3306;user;user
 addStudentToStudents;INSERT INTO studenter (fname, lname, town, hobby) VALUES (?,?,?,?);gritacademy;localhost;3306;inserter;inserter
 studentLogin;Select * FROM students s WHERE s.username='{0}' AND s.password='{1}';gritacademy;localhost;3306;user;user
 teacherLogin;Select * FROM teachers t WHERE t.username='{0}' AND t.password='{1}';gritacademy;localhost;3306;user;user

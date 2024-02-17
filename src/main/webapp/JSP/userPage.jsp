@@ -6,13 +6,21 @@
 <body>
 <%@ include file="fragments/navbar.jsp" %>
 
-
-<c:if test="${userBean.userType == 'student'}">
-    <%@ include file="fragments/studentUserPage.jsp" %>
-</c:if>
-
+<c:choose>
+ <c:when test="${userBean.userType == 'student'}">
+    <%@ include file="fragments/student/studentUserPage.jsp" %>
+ </c:when>
+ <c:when test="${userBean.userType == 'teacher' && userBean.privilagetype == 'user'}">
+    <%@ include file="fragments/teacher/teacherUserPage.jsp" %>
+ </c:when>
+ <c:when test="${userBean.userType == 'teacher' && userBean.privilagetype == 'admin'}">
+    <%@ include file="fragments/teacher/teacherAdminUserPage.jsp" %>
+ </c:when>
+ <c:when test="${userBean.userType == 'teacher' && userBean.privilagetype == 'superadmin'}">
+    <%@ include file="fragments/teacher/teacherSuperadminUserPage.jsp" %>
+ </c:when>
+</c:choose>
 
 <%@ include file="fragments/footer.jsp" %>
-
 </body>
 </html>

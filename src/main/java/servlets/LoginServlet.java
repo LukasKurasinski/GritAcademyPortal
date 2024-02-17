@@ -36,7 +36,7 @@ public class LoginServlet extends HttpServlet {
             //data object always returns row with column names
             if (data.size() > 1) {
                 req.getSession().setMaxInactiveInterval(360);
-                UserBean userBean = new UserBean((data.get(0))[1],USER_TYPE.student, PRIVILAGE_TYPE.user,STATE_TYPE.confirmed);
+                UserBean userBean = new UserBean((data.get(1))[0],USER_TYPE.student, PRIVILAGE_TYPE.user,STATE_TYPE.confirmed);
                 req.getSession().setAttribute("userBean", userBean);
                 req.getRequestDispatcher("/userPage").forward(req,resp);
             }else{//if login not found goes back to login form and sows a message
