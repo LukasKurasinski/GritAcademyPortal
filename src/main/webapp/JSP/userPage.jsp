@@ -7,16 +7,16 @@
 <%@ include file="fragments/navbar.jsp" %>
 
 <c:choose>
- <c:when test="${userBean.userType == 'student'}">
+ <c:when test="${userBean.userType == 'student' && userBean.stateType == 'confirmed'}">
     <%@ include file="fragments/student/studentUserPage.jsp" %>
  </c:when>
- <c:when test="${userBean.userType == 'teacher' && userBean.privilageType == 'user'}">
+ <c:when test="${userBean.userType == 'teacher' && userBean.privilageType == 'user' && userBean.stateType == 'confirmed'}">
     <%@ include file="fragments/teacher/teacherUserUserPage.jsp" %>
  </c:when>
- <c:when test="${userBean.userType == 'teacher' && userBean.privilageType == 'admin'}">
+ <c:when test="${userBean.userType == 'teacher' && userBean.privilageType == 'admin' && userBean.stateType == 'confirmed'}">
     <%@ include file="fragments/teacher/teacherAdminUserPage.jsp" %>
  </c:when>
- <c:when test="${userBean.userType == 'teacher' && userBean.privilageType == 'superadmin'}">
+ <c:when test="${userBean.userType == 'teacher' && userBean.privilageType == 'superadmin' && userBean.stateType == 'confirmed'}">
     <%@ include file="fragments/teacher/teacherSuperadminUserPage.jsp" %>
  </c:when>
 </c:choose>

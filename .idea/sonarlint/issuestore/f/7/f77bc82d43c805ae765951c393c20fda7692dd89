@@ -1,17 +1,15 @@
 
 k
-java:S1192"IDefine a constant instead of duplicating this literal "userBean" 3 times.(ŞÇ–”ÿÿÿÿÿ8¯’–ˆÜ1
+java:S1192"IDefine a constant instead of duplicating this literal "userBean" 3 times.(ŞÇ–”ÿÿÿÿÿ8öó©—Ü1
 }
-java:S1989"`Handle the following exceptions that could be thrown by "doPost": ServletException, IOException.(‘›şá8·’–ˆÜ1
+java:S1989"`Handle the following exceptions that could be thrown by "doPost": ServletException, IOException.(‘›şá8˜‡ª—Ü1
 }
-java:S1989"[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(ˆ¬¸¥ûÿÿÿÿ8º’–ˆÜ1
+java:S1989"[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(ˆ¬¸¥ûÿÿÿÿ8›‡ª—Ü1
 }
-java:S1989""[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(‰‡Ãúÿÿÿÿ8»’–ˆÜ1
+java:S1989"[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(‰‡Ãúÿÿÿÿ8æô©—Ü1
 ƒ
-java:S1989)"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(äì·ëıÿÿÿÿ8»’–ˆÜ1
-O
-java:S1135,"2Complete the task associated to this TODO comment.(ÔŞ‚“8¼’–ˆÜ1
-O
-java:S1135."2Complete the task associated to this TODO comment.(ÔŞ‚“8¼’–ˆÜ1
+java:S1989&"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(äì·ëıÿÿÿÿ8‡ª—Ü1
 ƒ
-java:S19890"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(±Êó¢ÿÿÿÿÿ8¼’–ˆÜ1
+java:S1989)"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(äì·ëıÿÿÿÿ8‡ª—Ü1
+ƒ
+java:S1989+"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(±Êó¢ÿÿÿÿÿ8‡ª—Ü1

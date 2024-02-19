@@ -1,9 +1,6 @@
 package servlets;
 
-import models.MySQLConnector;
-import models.PRIVILAGE_TYPE;
-import models.USER_TYPE;
-import models.UserBean;
+import models.*;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -26,7 +23,7 @@ public class UserPageServlet extends HttpServlet {
 
         UserBean userBean = req.getSession().getAttribute("userBean") != null ? (UserBean)req.getSession().getAttribute("userBean") : null;
 
-        if (userBean != null && userBean.getUserType() == USER_TYPE.student) {
+        if (userBean != null && userBean.getUserType() == USER_TYPE.student && userBean.getStateType() == STATE_TYPE.confirmed) {
             LinkedList<String[]> data = null;
             LinkedList<String[]> courses = MySQLConnector.getConnector().selectQuery("allCoursesForStudentID", ((UserBean) req.getSession().getAttribute("userBean")).getId());
 
@@ -40,10 +37,8 @@ public class UserPageServlet extends HttpServlet {
             req.setAttribute("courses", courses);
             req.getRequestDispatcher("JSP/userPage.jsp").forward(req, resp);
 
-        }else if (userBean != null && userBean.getUserType()== USER_TYPE.teacher && userBean.getprivilageType()== PRIVILAGE_TYPE.user) {
-            //TODO do stuff for this person
-        }else if (userBean != null && userBean.getUserType()== USER_TYPE.teacher && userBean.getprivilageType()== PRIVILAGE_TYPE.admin) {
-            //TODO do stuff for this person
+        }else if (userBean != null && userBean.getUserType() == USER_TYPE.teacher && userBean.getPrivilageType()==PRIVILAGE_TYPE.user && userBean.getStateType() == STATE_TYPE.confirmed) {
+            req.getRequestDispatcher("JSP/userPage.jsp").forward(req, resp);
         }else{
             req.getRequestDispatcher("JSP/login.jsp").forward(req, resp);
         }

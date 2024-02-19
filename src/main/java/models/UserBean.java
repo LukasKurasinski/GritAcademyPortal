@@ -31,7 +31,7 @@ public class UserBean implements Serializable {
         this.stateType = stateType;
     }
 
-    public void setprivilageType(PRIVILAGE_TYPE privilageType) {
+    public void setPrivilageType(PRIVILAGE_TYPE privilageType) {
         this.privilageType = privilageType;
     }
 
@@ -39,7 +39,7 @@ public class UserBean implements Serializable {
         this.userType = userType;
     }
 
-    public PRIVILAGE_TYPE getprivilageType() {
+    public PRIVILAGE_TYPE getPrivilageType() {
         return privilageType;
     }
 

@@ -1200,3 +1200,5 @@ m
 =src/main/webapp/JSP/fragments/teacher/teacherUserUserPage.jsp,0\1\01521f6ad25bceef4280c2668bafc0129f86feae
 `
 0src/main/webapp/JSP/fragments/misc/dataTable.jsp,1\1\119575d5583264025456287a800aa0168eb7d5d5
+Y
+)src/main/java/servlets/LogoutServlet.java,e\1\e175759c06664a8f2e0c14bbb169bb041cd807b6

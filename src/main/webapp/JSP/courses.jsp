@@ -5,7 +5,7 @@
 <%@ include file="fragments/head.jsp" %>
 <body>
 <%@ include file="fragments/navbar.jsp" %>
-
+<%@ include file="fragments/misc/dataTable.jsp" %>
 <%@ include file="fragments/footer.jsp" %>
 
 </body>
