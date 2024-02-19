@@ -1,4 +1,7 @@
 <main>
-teacher superadmin
+<main>
+<%@ include file="teacherSuperadminNavbar.jsp" %>
+<%@ include file="../misc/dataTable.jsp" %>
+</main>
 
 </main>

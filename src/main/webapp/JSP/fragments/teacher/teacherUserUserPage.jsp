@@ -1,4 +1,4 @@
 <main>
-<%@ include file="teacherAdminNavbar.jsp" %>
+<%@ include file="teacherUserNavbar.jsp" %>
 <%@ include file="../misc/dataTable.jsp" %>
 </main>

@@ -18,30 +18,34 @@ public class UserPageServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        doPost(req,resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        UserBean userBean = (UserBean)req.getSession().getAttribute("userBean");
 
+        UserBean userBean = req.getSession().getAttribute("userBean") != null ? (UserBean)req.getSession().getAttribute("userBean") : null;
 
-        if (userBean.getUserType()== USER_TYPE.student) {
-            if(req.getParameter("studentSubmit")!=null){
-                LinkedList<String[]> data = MySQLConnector.getConnector().selectQuery("allCoursesForStudentID", ((UserBean) req.getSession().getAttribute("userBean")).getId());
-                req.setAttribute("data", data);
-                req.getRequestDispatcher("JSP/userPage.jsp").forward(req, resp);
+        if (userBean != null && userBean.getUserType() == USER_TYPE.student) {
+            LinkedList<String[]> data = null;
+            LinkedList<String[]> courses = MySQLConnector.getConnector().selectQuery("allCoursesForStudentID", ((UserBean) req.getSession().getAttribute("userBean")).getId());
+
+            if(req.getParameter("studentSubmitButton")!=null){
+                data = MySQLConnector.getConnector().selectQuery("allPeopleInCourse",  req.getParameter("courseId"));
+
             }else {
-                LinkedList<String[]> data = MySQLConnector.getConnector().selectQuery("allCoursesForStudentID", ((UserBean) req.getSession().getAttribute("userBean")).getId());
-                req.setAttribute("data", data);
-                req.getRequestDispatcher("JSP/userPage.jsp").forward(req, resp);
+                data = courses;
             }
-        }else if (userBean.getUserType()== USER_TYPE.teacher && userBean.getprivilageType()== PRIVILAGE_TYPE.user) {
+            req.setAttribute("data", data);
+            req.setAttribute("courses", courses);
+            req.getRequestDispatcher("JSP/userPage.jsp").forward(req, resp);
+
+        }else if (userBean != null && userBean.getUserType()== USER_TYPE.teacher && userBean.getprivilageType()== PRIVILAGE_TYPE.user) {
             //TODO do stuff for this person
-        }else if (userBean.getUserType()== USER_TYPE.teacher && userBean.getprivilageType()== PRIVILAGE_TYPE.admin) {
+        }else if (userBean != null && userBean.getUserType()== USER_TYPE.teacher && userBean.getprivilageType()== PRIVILAGE_TYPE.admin) {
             //TODO do stuff for this person
         }else{
-            //TODO send Person to login servlet
+            req.getRequestDispatcher("JSP/login.jsp").forward(req, resp);
         }
     }
 }

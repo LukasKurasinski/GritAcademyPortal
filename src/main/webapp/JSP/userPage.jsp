@@ -10,13 +10,13 @@
  <c:when test="${userBean.userType == 'student'}">
     <%@ include file="fragments/student/studentUserPage.jsp" %>
  </c:when>
- <c:when test="${userBean.userType == 'teacher' && userBean.privilagetype == 'user'}">
-    <%@ include file="fragments/teacher/teacherUserPage.jsp" %>
+ <c:when test="${userBean.userType == 'teacher' && userBean.privilageType == 'user'}">
+    <%@ include file="fragments/teacher/teacherUserUserPage.jsp" %>
  </c:when>
- <c:when test="${userBean.userType == 'teacher' && userBean.privilagetype == 'admin'}">
+ <c:when test="${userBean.userType == 'teacher' && userBean.privilageType == 'admin'}">
     <%@ include file="fragments/teacher/teacherAdminUserPage.jsp" %>
  </c:when>
- <c:when test="${userBean.userType == 'teacher' && userBean.privilagetype == 'superadmin'}">
+ <c:when test="${userBean.userType == 'teacher' && userBean.privilageType == 'superadmin'}">
     <%@ include file="fragments/teacher/teacherSuperadminUserPage.jsp" %>
  </c:when>
 </c:choose>

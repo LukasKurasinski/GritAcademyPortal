@@ -1,22 +1,24 @@
 
-K
-java:S3740/"/Provide the parametrized type for this generic.(‹ãÀ`8®¦˜Û1
+j
+java:S1192"MDefine a constant instead of duplicating this literal "errorMessage" 3 times.(¦ïœ¡8â¯È…Ü1
 p
-java:S1192"NDefine a constant instead of duplicating this literal "JSP/login.jsp" 3 times.(±Êó¢ÿÿÿÿÿ8®¦˜Û1
-]	java:S125"<This block of commented-out lines of code should be removed.(—Ûóäûÿÿÿÿ8µ¦˜Û1
+java:S1192"NDefine a constant instead of duplicating this literal "JSP/login.jsp" 4 times.(±Êó¢ÿÿÿÿÿ8ã¯È…Ü1
+]	java:S125"<This block of commented-out lines of code should be removed.(—Ûóäûÿÿÿÿ8ú¯È…Ü1
 ƒ
-java:S1989"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(±Êó¢ÿÿÿÿÿ8µ¦˜Û1
+java:S1989"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(±Êó¢ÿÿÿÿÿ8ú¯È…Ü1
 }
-java:S1989#"[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(÷Á¸ùÿÿÿÿ8¶¦˜Û1
+java:S1989#"[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(÷Á¸ùÿÿÿÿ8‚°È…Ü1
 ~
-java:S1989)"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(Œ°ùÊ8·¦˜Û1
+java:S1989*"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(Œ°ùÊ8€°È…Ü1
 ƒ
-java:S1989,"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(±Êó¢ÿÿÿÿÿ8¸¦˜Û1
-w
-java:S1989/"[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(‹ãÀ`8¸¦˜Û1
-r
-java:S19892"PHandle the following exception that could be thrown by "getWriter": IOException.(²¿‡şÿÿÿÿ8¸¦˜Û1
-T
-java:S11353"2Complete the task associated to this TODO comment.(¢ó©¿ùÿÿÿÿ8¸¦˜Û1
+java:S1989-"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(±Êó¢ÿÿÿÿÿ8°È…Ü1
+}
+java:S19890"[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(»´Üıÿÿÿÿ8ËûÉ…Ü1
+~
+java:S19896"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(Œ°ùÊ8ƒ°È…Ü1
 ƒ
-java:S19895"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(±Êó¢ÿÿÿÿÿ8¸¦˜Û1
+java:S19899"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(±Êó¢ÿÿÿÿÿ8„°È…Ü1
+ƒ
+java:S1989="aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(±Êó¢ÿÿÿÿÿ8…°È…Ü1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ÙÉÉ…Ü1
