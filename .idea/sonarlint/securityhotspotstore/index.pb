@@ -1202,3 +1202,13 @@ m
 0src/main/webapp/JSP/fragments/misc/dataTable.jsp,1\1\119575d5583264025456287a800aa0168eb7d5d5
 Y
 )src/main/java/servlets/LogoutServlet.java,e\1\e175759c06664a8f2e0c14bbb169bb041cd807b6
+^
+.src/main/webapp/JSP/fragments/misc/chooser.jsp,d\e\dee50e9ba3d2c7175de4d22160da925a6aa463d8
+e
+5src/main/webapp/JSP/fragments/misc/studentChooser.jsp,4\4\44652df0c51b1bda14d18b708f36a52632e3a83e
+e
+5src/main/webapp/JSP/fragments/misc/teacherChooser.jsp,3\a\3a10f0b566154a93440d7d2b4ccb21a053a4fa71
+d
+4src/main/webapp/JSP/fragments/misc/courseChooser.jsp,7\0\705ab8f7feb4b17bac4a29031b56dae0085e3514
+W
+'src/main/java/misc/SessionListener.java,1\0\10f86d94712945284fdf9b21e197c99e329b5649

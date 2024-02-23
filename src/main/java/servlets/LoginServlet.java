@@ -3,21 +3,22 @@ package servlets;
 import models.*;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebListener;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.*;
 import java.io.IOException;
 import java.util.LinkedList;
-import java.util.List;
+
 
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
+    int sessionMaxInterval = 6000;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.getSession().setAttribute("errorMessage","");
         req.getRequestDispatcher("JSP/login.jsp").forward(req,resp);
+
     }
 
     @Override
@@ -35,7 +36,7 @@ public class LoginServlet extends HttpServlet {
 
                 //data object always returns row with column names
                 if (data.size() > 1) {
-                    req.getSession().setMaxInactiveInterval(360);
+                    req.getSession().setMaxInactiveInterval(sessionMaxInterval);
                     UserBean userBean = new UserBean((data.get(1))[0], USER_TYPE.student, PRIVILAGE_TYPE.user, STATE_TYPE.confirmed);
                     req.getSession().setAttribute("userBean", userBean);
                     req.getRequestDispatcher("/userPage").forward(req, resp);
@@ -47,10 +48,9 @@ public class LoginServlet extends HttpServlet {
                 LinkedList<String[]> data = MySQLConnector.getConnector().selectQuery("teacherLogin", username, password);
                 //data object always returns row with column names
                 if (data.size() > 1) {
-                    req.getSession().setMaxInactiveInterval(360);
+                    req.getSession().setMaxInactiveInterval(sessionMaxInterval);
                     UserBean userBean = new UserBean((data.get(1))[0],USER_TYPE.teacher, resolvePrivilageType(data.get(1)[8]), STATE_TYPE.confirmed);
                     req.getSession().setAttribute("userBean", userBean);
-                    System.out.println(userBean);
                     req.getRequestDispatcher("/userPage").forward(req,resp);
                 }else{
                     req.getSession().setAttribute("errorMessage","Teacher not found");

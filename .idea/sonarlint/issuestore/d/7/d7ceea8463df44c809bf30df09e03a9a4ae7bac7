@@ -1,24 +1,25 @@
 
 j
-java:S1192"MDefine a constant instead of duplicating this literal "errorMessage" 3 times.(¦ïœ¡8¬‹¢Ü1
+java:S1192"MDefine a constant instead of duplicating this literal "errorMessage" 3 times.(¦ïœ¡8‹½º´Ü1
 p
-java:S1192"NDefine a constant instead of duplicating this literal "JSP/login.jsp" 4 times.(±Êó¢ÿÿÿÿÿ8¬‹¢Ü1
+java:S1192"NDefine a constant instead of duplicating this literal "JSP/login.jsp" 4 times.(±Êó¢ÿÿÿÿÿ8‹½º´Ü1
 ƒ
-java:S1989"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(±Êó¢ÿÿÿÿÿ8À‹¢Ü1
+java:S1989"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(±Êó¢ÿÿÿÿÿ8Ÿ½º´Ü1
 }
-java:S1989""[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(÷Á¸ùÿÿÿÿ8Ã‹¢Ü1
+java:S1989#"[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(÷Á¸ùÿÿÿÿ8¡½º´Ü1
 ~
-java:S1989)"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(Œ°ùÊ8Ä‹¢Ü1
+java:S1989*"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(Œ°ùÊ8¢½º´Ü1
 ƒ
-java:S1989,"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(±Êó¢ÿÿÿÿÿ8Ä‹¢Ü1
+java:S1989-"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(±Êó¢ÿÿÿÿÿ8¢½º´Ü1
 }
-java:S1989/"[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(»´Üıÿÿÿÿ8Ä‹¢Ü1
-L	java:S1065"+Replace this use of System.out by a logger.(£éÎùÿÿÿÿ8ºÌäÜ1
+java:S19890"[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(»´Üıÿÿÿÿ8£½º´Ü1
 ~
-java:S19896"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(Œ°ùÊ8Æ‹¢Ü1
+java:S19896"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(Œ°ùÊ8¤½º´Ü1
 ƒ
-java:S19899"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(±Êó¢ÿÿÿÿÿ8Æ‹¢Ü1
+java:S19899"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(±Êó¢ÿÿÿÿÿ8¥½º´Ü1
 ƒ
-java:S1989="aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(±Êó¢ÿÿÿÿÿ8Æ‹¢Ü1
-M
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8áğ¤Ü1
+java:S1989="aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(±Êó¢ÿÿÿÿÿ8¥½º´Ü1
+^
+java:S1128"ARemove this unused import 'javax.servlet.annotation.WebListener'.(úÖ­ï8ğîıİ1
+u
+java:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(§Àßı8§½º´Ü1

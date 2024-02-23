@@ -1,6 +1,6 @@
 <navbar id="teacherUserNavbar">
     <nav>
-        <form action="/userPage" method="/POST">
+        <form action="/userPage" method="post">
             <input type="submit" name="showAllStudents" value="showAllStudents">
             <input type="submit" name="showAllCourses" value="showAllCourses">
             <input type="submit" name="showAllTeachers" value="showAllTeachers">

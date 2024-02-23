@@ -1,8 +1,12 @@
-allFromStudenter;SELECT id, fname, lname, town, hobby FROM studenter ORDER BY id ASC;gritacademy;localhost;3306;user;user
+allFromStudents;SELECT * FROM students ORDER BY id ASC;gritacademy;localhost;3306;user;user
 allFromCourses;SELECT * FROM courses ORDER BY id ASC;gritacademy;localhost;3306;user;user
+allFromTeachers;SELECT * FROM teachers ORDER BY id ASC;gritacademy;localhost;3306;user;user
+
 allCoursesForStudent;SELECT s.id, s.fname, s.lname, k.namn, k.YHP, k.beskrivning FROM studenter s JOIN narvaro n ON n.studentID=s.id JOIN kurser k ON k.id=n.kursID WHERE s.fname='{0}' AND s.lname='{1}' AND s.id='{2}' ORDER BY s.id ASC;gritacademy;localhost;3306;user;user
 allCoursesForStudentNoID;SELECT s.id, s.fname, s.lname, k.namn, k.YHP, k.beskrivning FROM studenter s JOIN narvaro n ON n.studentID=s.id JOIN kurser k ON k.id=n.kursID WHERE s.fname='{0}' AND s.lname='{1}' ORDER BY s.id ASC;gritacademy;localhost;3306;user;user
 allCoursesForStudentID;SELECT c.id, c.name, c.YHP, c.description FROM students s JOIN students_courses sc ON sc.students_id=s.id JOIN courses c ON c.id=sc.courses_id WHERE s.id='{0}' ORDER BY s.id ASC;gritacademy;localhost;3306;user;user
+allCoursesForTeacherID;SELECT c.id, c.name, c.YHP, c.description FROM teachers t JOIN teachers_courses tc ON tc.teachers_id=t.id JOIN courses c ON c.id=tc.courses_id WHERE t.id='{0}' ORDER BY c.id ASC;gritacademy;localhost;3306;user;user
+
 allPeopleInCourse;SELECT c.name, s.fName, s.lName, t.fName, t.lName  FROM students s JOIN students_courses sc ON sc.students_id=s.id LEFT JOIN teachers_courses tc ON sc.courses_id=tc.courses_id LEFT JOIN courses c ON c.id=sc.courses_id  LEFT JOIN teachers t ON t.id=tc.teachers_id WHERE c.id='{0}' ORDER BY s.id ASC;gritacademy;localhost;3306;user;user
 
 addStudentToStudents;INSERT INTO studenter (fname, lname, town, hobby) VALUES (?,?,?,?);gritacademy;localhost;3306;inserter;inserter

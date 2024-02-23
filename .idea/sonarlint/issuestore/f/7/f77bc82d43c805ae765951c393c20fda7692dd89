@@ -1,15 +1,46 @@
 
+m
+java:S1192-"PDefine a constant instead of duplicating this literal "allFromStudents" 3 times.( ¸Ý‘8Õ—¤ÂÜ1
 k
-java:S1192"IDefine a constant instead of duplicating this literal "userBean" 3 times.(ÞÇ–”ÿÿÿÿÿ8öó©—Ü1
+java:S1192"IDefine a constant instead of duplicating this literal "userBean" 3 times.(ÞÇ–”ÿÿÿÿÿ8Õ—¤ÂÜ1
+m
+java:S11922"PDefine a constant instead of duplicating this literal "allFromTeachers" 3 times.(ÑŠ‚à8Õ—¤ÂÜ1
 }
-java:S1989"`Handle the following exceptions that could be thrown by "doPost": ServletException, IOException.(‘›þá8˜‡ª—Ü1
+java:S1989"`Handle the following exceptions that could be thrown by "doPost": ServletException, IOException.(‘›þá8ˆ˜¤ÂÜ1
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(üª¼í8ˆ˜¤ÂÜ1
+w
+java:S1989 "[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(§‰Ÿ*8Š˜¤ÂÜ1
+x
+java:S1989#"[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(é°±ç8Š˜¤ÂÜ1
+ƒ
+java:S1989("aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(äì·ëýÿÿÿÿ8Š˜¤ÂÜ1
+T
+java:S1135+"2Complete the task associated to this TODO comment.(ý®½¦øÿÿÿÿ8‹˜¤ÂÜ1
+x
+java:S1989-"[Handle the following exception that could be thrown by "selectQuery": NullPointerException.( ¸Ý‘8‹˜¤ÂÜ1
 }
-java:S1989"[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(ˆ¬¸¥ûÿÿÿÿ8›‡ª—Ü1
+java:S1989/"[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(õÄÕ§ÿÿÿÿÿ8‹˜¤ÂÜ1
+x
+java:S19892"[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(ÑŠ‚à8‹˜¤ÂÜ1
+x
+java:S19897"[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(ÑŠ‚à8ª™ÖÂÜ1
+]	java:S1258"<This block of commented-out lines of code should be removed.(ºÆ½Êûÿÿÿÿ8ª™ÖÂÜ1
 }
-java:S1989"[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(‰‡Ãúÿÿÿÿ8æô©—Ü1
+java:S1989:"[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(äõ›“úÿÿÿÿ8Œ˜¤ÂÜ1
+}
+java:S1989;"[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(ºÔóÁûÿÿÿÿ8ª™ÖÂÜ1
+x
+java:S1989@"[Handle the following exception that could be thrown by "selectQuery": NullPointerException.( ¸Ý‘8ª™ÖÂÜ1
+]	java:S125A"<This block of commented-out lines of code should be removed.(ºÆ½Êûÿÿÿÿ8«™ÖÂÜ1
+}
+java:S1989C"[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(«¿——þÿÿÿÿ8˜¤ÂÜ1
+}
+java:S1989D"[Handle the following exception that could be thrown by "selectQuery": NullPointerException.(Á¦Ùúÿÿÿÿ8«™ÖÂÜ1
+L	java:S106K"+Replace this use of System.out by a logger.(Ñ®ªÃøÿÿÿÿ8¬™ÖÂÜ1
 ƒ
-java:S1989&"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(äì·ëýÿÿÿÿ8‡ª—Ü1
+java:S1989R"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(äì·ëýÿÿÿÿ8¬™ÖÂÜ1
 ƒ
-java:S1989)"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(äì·ëýÿÿÿÿ8‡ª—Ü1
-ƒ
-java:S1989+"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(±Êó¢ÿÿÿÿÿ8ž‡ª—Ü1
+java:S1989T"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(±Êó¢ÿÿÿÿÿ8¬™ÖÂÜ1
+L
+java:S1128"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕ8Ž˜¤ÂÜ1
