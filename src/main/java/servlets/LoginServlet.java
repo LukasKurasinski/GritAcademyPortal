@@ -12,7 +12,7 @@ import java.util.LinkedList;
 
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
-    int sessionMaxInterval = 6000;
+    private int sessionMaxInterval = 6000;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

@@ -1212,3 +1212,5 @@ d
 4src/main/webapp/JSP/fragments/misc/courseChooser.jsp,7\0\705ab8f7feb4b17bac4a29031b56dae0085e3514
 W
 'src/main/java/misc/SessionListener.java,1\0\10f86d94712945284fdf9b21e197c99e329b5649
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
